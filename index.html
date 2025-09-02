@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralArun - The Dawn of Intelligent Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-color: #0a0a0a;
+            background-image: radial-gradient(circle at 1px 1px, #374151 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .card-bg {
+            background-color: rgba(31, 41, 55, 0.5);
+            border: 1px solid rgba(55, 65, 81, 0.5);
+        }
+        .card-bg:hover {
+            background-color: rgba(55, 65, 81, 0.7);
+            border-color: rgba(110, 110, 110, 0.5);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-30 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- LOGO 1: Replace 'your-logo.png' with your image file name -->
+                <img src="neuralarun-logo.png" alt="NeuralArun Logo" class="h-10 w-10">
+                <span class="text-2xl font-bold text-white">NeuralArun</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-gray-300">
+                <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="#products" class="hover:text-amber-400 transition-colors">Products</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#home" class="block py-2 hover:text-amber-400 transition-colors">Home</a>
+             <a href="#about" class="block py-2 hover:text-amber-400 transition-colors">About</a>
+             <a href="#products" class="block py-2 hover:text-amber-400 transition-colors">Products</a>
+             <a href="#contact" class="block py-2 hover:text-amber-400 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center hero-bg pt-20">
+            <div class="container mx-auto px-6">
+                 <!-- LOGO 2: Replace 'your-logo.png' with your image file name -->
+                <img src="neuralarunmiddle.png" alt="NeuralArun Logo" class="h-auto w-64 mx-auto mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">
+                    The Dawn of <span class="gradient-text">Intelligent Technology</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    NeuralArun is the parent company pioneering the next generation of AI-driven solutions to solve real-world problems.
+                </p>
+                <a href="#products" class="bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg hover:bg-amber-400 transition-all duration-300 shadow-lg shadow-amber-500/20">
+                    Explore Our Vision
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Our Mission</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
+                <p class="text-gray-400 max-w-4xl mx-auto text-lg">
+                    At NeuralArun, our mission is to build a diverse ecosystem of intelligent applications that empower individuals and industries. We believe in harnessing the power of artificial intelligence to create intuitive, helpful, and accessible tools for everyone. From education to healthcare, we are committed to innovation that makes a meaningful impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white text-center mb-4">Our Future Products</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-12"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-3">NEETPrepGPT</h3>
+                        <p class="text-gray-400 mb-4">An AI-powered platform to revolutionize medical entrance exam preparation.</p>
+                        <span class="text-amber-400 font-medium">Coming Soon</span>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Symptom2Specialist Bot</h3>
+                        <p class="text-gray-400 mb-4">An intelligent bot to help guide users to the right medical specialist based on their symptoms.</p>
+                        <span class="text-amber-400 font-medium">In Development</span>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="card-bg p-8 rounded-xl text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Your Next Big Idea</h3>
+                        <p class="text-gray-400 mb-4">We are constantly innovating. Our next project could change another industry forever.</p>
+                        <span class="text-amber-400 font-medium">Conceptual Stage</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8 text-lg">
+                    We're building the future and are always open to collaboration and new ideas.
+                </p>
+                <a href="mailto:contact@neuralarun.com" class="border border-amber-500 text-amber-500 font-semibold py-3 px-8 rounded-lg hover:bg-amber-500 hover:text-gray-900 transition-all duration-300">
+                    contact@neuralarun.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 NeuralArun. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
